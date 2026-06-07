@@ -1,0 +1,19 @@
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略本地训练的模型权重文件（大文件不建议直接传，让用户自己跑脚本生成）
+*.pth
+*.onnx
+
+# 忽略 MLflow 的本地运行日志和数据库
+mlruns/
+mlflow.db
+
+# 忽略虚拟环境
+.venv/
+venv/
+env/
+
+# 如果你不想把原始数据集传上去（推荐忽略）
+# datasets/
